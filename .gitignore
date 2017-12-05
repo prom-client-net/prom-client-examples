@@ -1,0 +1,10 @@
+﻿*.nupkg
+*.user
+*.suo
+*.exe
+
+.vs
+bin
+obj
+packages
+.idea
