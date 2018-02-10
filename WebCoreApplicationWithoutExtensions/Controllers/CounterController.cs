@@ -6,7 +6,7 @@ namespace WebCoreApplicationWithoutExtensions.Controllers
     [Route("[controller]")]
     public class CounterController : Controller
     {
-        readonly Counter _counter = Metrics.CreateCounter("myCounter", "some help about this");
+        private readonly Counter _counter = Metrics.CreateCounter("myCounter", "some help about this");
 
         [HttpGet]
         public IActionResult Get()

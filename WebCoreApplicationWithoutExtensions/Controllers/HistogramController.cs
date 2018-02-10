@@ -1,8 +1,7 @@
-﻿using System.Text;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Prometheus.Client;
 
-namespace WebCoreApplication.Controllers
+namespace WebCoreApplicationWithoutExtensions.Controllers
 {
     [Route("[controller]")]
     public class HistogramController : Controller

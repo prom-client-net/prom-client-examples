@@ -14,9 +14,7 @@ namespace WebCoreApplicationWithoutExtensions
 
             var host = new WebHostBuilder()
                 .UseKestrel()
-              
                 .UseContentRoot(directory)
-                .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();
 

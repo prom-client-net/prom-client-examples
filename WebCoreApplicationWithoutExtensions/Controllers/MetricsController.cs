@@ -1,11 +1,8 @@
-﻿using System.IO;
-using System.Text;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Prometheus.Client;
 using Prometheus.Client.Collectors;
 
-
-namespace WebCoreApplication.Controllers
+namespace WebCoreApplicationWithoutExtensions.Controllers
 {
     [Route("[controller]")]
     public class MetricsController : Controller
