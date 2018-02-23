@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prometheus.Client" Version="1.4.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Prometheus.Client.MetricServer, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\Prometheus.Client.MetricServer\src\Prometheus.Client.MetricServer\bin\Debug\netstandard2.0\Prometheus.Client.MetricServer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
