@@ -5,13 +5,13 @@ VisualStudioVersion = 12.0.0.0
 MinimumVisualStudioVersion = 10.0.0.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCoreApplicationWithoutExtensions", "WebCoreApplicationWithoutExtensions\WebCoreApplicationWithoutExtensions.csproj", "{13BF4982-8ECF-4456-8900-BD84F4C80F39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreConsoleMetricServer_2.0", "CoreConsoleMetricServer_2.0\CoreConsoleMetricServer_2.0.csproj", "{692B16B7-3DA0-44A4-BA2B-160B46A26574}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreConsoleMetricServer_1.0", "CoreConsoleMetricServer_1.0\CoreConsoleMetricServer_1.0.csproj", "{9F50E69E-C784-4B56-8EFD-88442E41A537}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleMetricServer_4.5", "ConsoleMetricServer_4.5\ConsoleMetricServer_4.5.csproj", "{A0480849-26D3-4F05-B9AE-A6CAA0AE3F4E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MetricServer", "MetricServer", "{5958A430-567D-47BC-AFCE-CC86EF3BE9F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleMetricServer_4.5", "MetricServer\ConsoleMetricServer_4.5\ConsoleMetricServer_4.5.csproj", "{A0480849-26D3-4F05-B9AE-A6CAA0AE3F4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreConsoleMetricServer_1.0", "MetricServer\CoreConsoleMetricServer_1.0\CoreConsoleMetricServer_1.0.csproj", "{01F1D0DE-5449-4578-97A7-3976392B56B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreConsoleMetricServer_2.0", "MetricServer\CoreConsoleMetricServer_2.0\CoreConsoleMetricServer_2.0.csproj", "{C98FDA57-2C3B-44C8-91B4-BEEA006D5182}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,25 +23,25 @@ Global
 		{13BF4982-8ECF-4456-8900-BD84F4C80F39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13BF4982-8ECF-4456-8900-BD84F4C80F39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13BF4982-8ECF-4456-8900-BD84F4C80F39}.Release|Any CPU.Build.0 = Release|Any CPU
-		{692B16B7-3DA0-44A4-BA2B-160B46A26574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{692B16B7-3DA0-44A4-BA2B-160B46A26574}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{692B16B7-3DA0-44A4-BA2B-160B46A26574}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{692B16B7-3DA0-44A4-BA2B-160B46A26574}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9F50E69E-C784-4B56-8EFD-88442E41A537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9F50E69E-C784-4B56-8EFD-88442E41A537}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9F50E69E-C784-4B56-8EFD-88442E41A537}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9F50E69E-C784-4B56-8EFD-88442E41A537}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A0480849-26D3-4F05-B9AE-A6CAA0AE3F4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A0480849-26D3-4F05-B9AE-A6CAA0AE3F4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0480849-26D3-4F05-B9AE-A6CAA0AE3F4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0480849-26D3-4F05-B9AE-A6CAA0AE3F4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01F1D0DE-5449-4578-97A7-3976392B56B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01F1D0DE-5449-4578-97A7-3976392B56B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01F1D0DE-5449-4578-97A7-3976392B56B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01F1D0DE-5449-4578-97A7-3976392B56B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C98FDA57-2C3B-44C8-91B4-BEEA006D5182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C98FDA57-2C3B-44C8-91B4-BEEA006D5182}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C98FDA57-2C3B-44C8-91B4-BEEA006D5182}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C98FDA57-2C3B-44C8-91B4-BEEA006D5182}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A0480849-26D3-4F05-B9AE-A6CAA0AE3F4E} = {5958A430-567D-47BC-AFCE-CC86EF3BE9F1}
-		{9F50E69E-C784-4B56-8EFD-88442E41A537} = {5958A430-567D-47BC-AFCE-CC86EF3BE9F1}
-		{692B16B7-3DA0-44A4-BA2B-160B46A26574} = {5958A430-567D-47BC-AFCE-CC86EF3BE9F1}
+		{01F1D0DE-5449-4578-97A7-3976392B56B8} = {5958A430-567D-47BC-AFCE-CC86EF3BE9F1}
+		{C98FDA57-2C3B-44C8-91B4-BEEA006D5182} = {5958A430-567D-47BC-AFCE-CC86EF3BE9F1}
 	EndGlobalSection
 EndGlobal
