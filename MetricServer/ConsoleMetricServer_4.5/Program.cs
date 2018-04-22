@@ -2,7 +2,7 @@
 using Prometheus.Client;
 using Prometheus.Client.MetricServer;
 
-namespace ConsoleMetricServer_4._5
+namespace ConsoleMetricServer
 {
     internal class Program
     {
