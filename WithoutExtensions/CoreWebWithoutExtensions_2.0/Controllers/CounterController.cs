@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Prometheus.Client;
 
-namespace WebCoreApplicationWithoutExtensions.Controllers
+namespace CoreWebWithoutExtensions.Controllers
 {
     [Route("[controller]")]
     public class CounterController : Controller

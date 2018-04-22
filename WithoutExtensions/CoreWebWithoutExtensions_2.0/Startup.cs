@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Prometheus.Client.Collectors;
 
-namespace WebCoreApplicationWithoutExtensions
+namespace CoreWebWithoutExtensions
 {
     public class Startup
     {

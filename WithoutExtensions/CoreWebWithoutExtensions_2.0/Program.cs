@@ -2,7 +2,7 @@
 using System.Reflection;
 using Microsoft.AspNetCore.Hosting;
 
-namespace WebCoreApplicationWithoutExtensions
+namespace CoreWebWithoutExtensions
 {
     public class Program
     {
