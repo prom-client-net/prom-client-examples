@@ -19,6 +19,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HttpRequestDurations", "Htt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreWebHttpRequestDurations_2.0", "HttpRequestDurations\CoreWebHttpRequestDurations_2.0\CoreWebHttpRequestDurations_2.0.csproj", "{27FD5B5E-4E59-42B2-B776-ABD8443C3102}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Middleware", "Middleware", "{127C8C78-F5D5-4774-A765-40A514420E56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebOwin_4.5", "Middleware\WebOwin_4.5\WebOwin_4.5.csproj", "{097CFCFA-CBD7-4758-86ED-90F3AE40F9ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,10 @@ Global
 		{27FD5B5E-4E59-42B2-B776-ABD8443C3102}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27FD5B5E-4E59-42B2-B776-ABD8443C3102}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27FD5B5E-4E59-42B2-B776-ABD8443C3102}.Release|Any CPU.Build.0 = Release|Any CPU
+		{097CFCFA-CBD7-4758-86ED-90F3AE40F9ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{097CFCFA-CBD7-4758-86ED-90F3AE40F9ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{097CFCFA-CBD7-4758-86ED-90F3AE40F9ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{097CFCFA-CBD7-4758-86ED-90F3AE40F9ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,5 +63,6 @@ Global
 		{C98FDA57-2C3B-44C8-91B4-BEEA006D5182} = {5958A430-567D-47BC-AFCE-CC86EF3BE9F1}
 		{077E7294-4E3B-448B-8A93-E496B475788B} = {73AF7CCB-67F6-4951-AB88-958CE2145AAE}
 		{27FD5B5E-4E59-42B2-B776-ABD8443C3102} = {48ED99AC-E8A3-4F2C-A99C-3B61E66B778B}
+		{097CFCFA-CBD7-4758-86ED-90F3AE40F9ED} = {127C8C78-F5D5-4774-A765-40A514420E56}
 	EndGlobalSection
 EndGlobal
