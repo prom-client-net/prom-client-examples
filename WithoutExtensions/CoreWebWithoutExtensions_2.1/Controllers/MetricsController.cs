@@ -2,7 +2,7 @@
 using Prometheus.Client;
 using Prometheus.Client.Collectors;
 
-namespace WebCoreApplicationWithoutExtensions.Controllers
+namespace CoreWebWithoutExtensions.Controllers
 {
     [Route("[controller]")]
     public class MetricsController : Controller

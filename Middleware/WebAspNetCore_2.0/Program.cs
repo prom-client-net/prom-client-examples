@@ -1,9 +1,8 @@
 ﻿using System.IO;
 using System.Reflection;
 using Microsoft.AspNetCore.Hosting;
-using WebAspNetCore;
 
-namespace WebCoreApplication
+namespace WebAspNetCore
 {
     public class Program
     {
