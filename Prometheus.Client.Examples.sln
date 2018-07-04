@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAspNetCore_2.0", "Middle
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreWebWithoutExtensions_2.1", "WithoutExtensions\CoreWebWithoutExtensions_2.1\CoreWebWithoutExtensions_2.1.csproj", "{5EAEFC47-FD45-4A01-B86A-B7291F724BFA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MetricPusher", "MetricPusher", "{1D721336-3902-4952-B9F1-972E11F244A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreConsoleMetricPusher_2.1", "MetricPusher\CoreConsoleMetricPusher_2.1\CoreConsoleMetricPusher_2.1.csproj", "{BF53A12B-99BC-44B1-A265-D40CC572986E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +63,10 @@ Global
 		{5EAEFC47-FD45-4A01-B86A-B7291F724BFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EAEFC47-FD45-4A01-B86A-B7291F724BFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EAEFC47-FD45-4A01-B86A-B7291F724BFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF53A12B-99BC-44B1-A265-D40CC572986E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF53A12B-99BC-44B1-A265-D40CC572986E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF53A12B-99BC-44B1-A265-D40CC572986E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF53A12B-99BC-44B1-A265-D40CC572986E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,5 +79,6 @@ Global
 		{097CFCFA-CBD7-4758-86ED-90F3AE40F9ED} = {127C8C78-F5D5-4774-A765-40A514420E56}
 		{5EAEFC47-FD45-4A01-B86A-B7291F724BFA} = {73AF7CCB-67F6-4951-AB88-958CE2145AAE}
 		{EE6B6F54-E659-49C5-B46C-7894BA02B29D} = {127C8C78-F5D5-4774-A765-40A514420E56}
+		{BF53A12B-99BC-44B1-A265-D40CC572986E} = {1D721336-3902-4952-B9F1-972E11F244A5}
 	EndGlobalSection
 EndGlobal
