@@ -5,5 +5,6 @@
     <RootNamespace>CoreConsoleMetricPusher_2._1</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Prometheus.Client.MetricPusher" Version="0.2.0-build14" />
   </ItemGroup>
 </Project>
