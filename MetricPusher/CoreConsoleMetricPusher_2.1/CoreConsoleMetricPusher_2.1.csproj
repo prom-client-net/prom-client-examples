@@ -5,8 +5,5 @@
     <RootNamespace>CoreConsoleMetricPusher_2._1</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Prometheus.Client.MetricPusher, Version=0.0.1.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\..\Prometheus.Client.MetricPusher\src\Prometheus.Client.MetricPusher\bin\Debug\netstandard2.0\Prometheus.Client.MetricPusher.dll</HintPath>
-    </Reference>
   </ItemGroup>
 </Project>
