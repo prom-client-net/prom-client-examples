@@ -6,8 +6,8 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
-    <PackageReference Include="Prometheus.Client" Version="1.5.1" />
-    <PackageReference Include="Prometheus.Client.HttpRequestDurations" Version="0.4.0" />
+    <PackageReference Include="Prometheus.Client" Version="1.6.0-build37" />
+    <PackageReference Include="Prometheus.Client.HttpRequestDurations" Version="0.5.0-build4" />
     <PackageReference Include="Prometheus.Client.AspNetCore" Version="1.5.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="1.1.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="1.1.0" />

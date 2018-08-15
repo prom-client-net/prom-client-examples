@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -47,6 +49,11 @@ namespace CoreWebHttpRequestDurations
                 q.IgnoreRoutesStartWith = new[]
                 {
                     "/swagger"
+                };
+
+                q.CustomLabels = new Dictionary<string, string>
+                {
+                    { "service_name", "example" }
                 };
             });
 
