@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System.Collections.Generic;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Prometheus.Client.Collectors;
+using Prometheus.Client.Collectors.Abstractions;
 
 namespace CoreWebWithoutExtensions
 {
@@ -18,7 +20,11 @@ namespace CoreWebWithoutExtensions
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
 
-            CollectorRegistry.Instance.RegisterOnDemandCollectors(new IOnDemandCollector[] { new DotNetStatsCollector(), new WindowsDotNetStatsCollector() });
+            CollectorRegistry.Instance.RegisterOnDemandCollectors(new List<IOnDemandCollector>
+            {
+                new DotNetStatsCollector(),
+                new WindowsDotNetStatsCollector()
+            });
         }
 
         public IConfigurationRoot Configuration { get; }
