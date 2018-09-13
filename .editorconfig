@@ -1,0 +1,26 @@
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+max_line_length = 180
+insert_final_newline = true
+
+[*.cs]
+indent_size = 4
+insert_final_newline = true
+
+[*.csproj]
+indent_size = 2
+
+[{*.yml,*.yaml}]
+indent_size = 2
+
+[*.json]
+indent_size = 2
+
+[{*.sh, *.ps1}]
+indent_size = 2
+
+# code style settings:
+[*.{cs}]
+dotnet_sort_system_directives_first = true
