@@ -23,7 +23,7 @@ namespace CoreWebWithoutExtensions
             CollectorRegistry.Instance.RegisterOnDemandCollectors(new List<IOnDemandCollector>
             {
                 new DotNetStatsCollector(),
-                new WindowsDotNetStatsCollector()
+                new ProcessCollector()
             });
         }
 
