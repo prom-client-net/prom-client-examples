@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Prometheus.Client.AspNetCore;
+using Prometheus.Client.Collectors;
 
 namespace WebAspNetCore
 {
@@ -36,9 +37,11 @@ namespace WebAspNetCore
             loggerFactory.AddDebug();
 
             app.UseMvc();
+            app.UsePrometheusServer(q => { q.UseDefaultCollectors = false; });
             app.UsePrometheusServer(q =>
             {
-                q.MapPath = "/metrics1";
+                q.CollectorRegistryInstance = new CollectorRegistry();
+                q.MapPath = "/default-metrics";
             });
         }
     }
