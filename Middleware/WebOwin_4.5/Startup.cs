@@ -16,7 +16,7 @@ namespace WebOwin
             config.MapHttpAttributeRoutes();
             app.UsePrometheusServer(q =>
             {
-                q.MapPath = "/api/metrics";
+                q.MapPath = "test-metrics";
             });
             app.UseWebApi(config);
         }
