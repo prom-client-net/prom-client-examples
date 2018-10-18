@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <AssemblyName>CoreWebHttpRequestDurations</AssemblyName>
     <RootNamespace>CoreWebHttpRequestDurations</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.5" />
     <PackageReference Include="Prometheus.Client" Version="2.0.1-build50" />
     <PackageReference Include="Prometheus.Client.AspNetCore" Version="2.0.1-build14" />
     <PackageReference Include="Prometheus.Client.HttpRequestDurations" Version="1.0.0-build9" />

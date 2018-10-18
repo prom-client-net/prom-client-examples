@@ -17,7 +17,6 @@ namespace CoreConsoleMetricServer
             Console.WriteLine("Press any key..");
             Console.ReadKey();
             metricServer.Stop();
-            
         }
     }
 }
