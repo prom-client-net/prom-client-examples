@@ -33,16 +33,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Prometheus.Client, Version=1.4.2.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\packages\Prometheus.Client.1.4.2\lib\net45\Prometheus.Client.dll</HintPath>
+    <Reference Include="Prometheus.Client, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\Prometheus.Client.2.0.0\lib\net45\Prometheus.Client.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Prometheus.Client.MetricServer, Version=1.2.3.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\packages\Prometheus.Client.MetricServer.1.2.3\lib\net45\Prometheus.Client.MetricServer.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="protobuf-net, Version=2.3.7.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67">
-      <HintPath>..\..\packages\protobuf-net.2.3.7\lib\net40\protobuf-net.dll</HintPath>
+    <Reference Include="Prometheus.Client.MetricServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\Prometheus.Client.MetricServer.2.0.0-build25\lib\net45\Prometheus.Client.MetricServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
