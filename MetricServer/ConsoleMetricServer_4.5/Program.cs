@@ -8,7 +8,7 @@ namespace ConsoleMetricServer
     {
         public static void Main(string[] args)
         {
-            IMetricServer metricServer = new MetricServer("localhost", 9091, "/metrics", false);
+            IMetricServer metricServer = new MetricServer("localhost", 9091, "/met", false);
             metricServer.Start();
 
             var counter = Metrics.CreateCounter("test_count", "helptext");
