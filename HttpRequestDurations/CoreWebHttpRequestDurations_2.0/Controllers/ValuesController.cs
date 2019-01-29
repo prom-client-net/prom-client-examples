@@ -14,6 +14,16 @@ namespace CoreWebHttpRequestDurations.Controllers
             return new string[] {"value1", "value2"};
         }
 
+        [HttpGet("{id}")]
+        public IEnumerable<string> Get(int id)
+        {
+            return new string[]
+            {
+                $"value1_{id}", $"value2_{id}"
+            };
+        }
+        
+
         [HttpGet("long")]
         public IEnumerable<string> GetLong()
         {

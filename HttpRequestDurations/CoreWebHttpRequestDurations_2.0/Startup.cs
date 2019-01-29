@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -54,6 +55,10 @@ namespace CoreWebHttpRequestDurations
                 q.CustomLabels = new Dictionary<string, string>
                 {
                     { "service_name", "example" }
+                };
+                q.CustomNormalizePath = new Dictionary<Regex, string>
+                {
+                    { new Regex(@"\/[0-9]{1,}(?![a-z])"), "/id" }
                 };
             });
 
