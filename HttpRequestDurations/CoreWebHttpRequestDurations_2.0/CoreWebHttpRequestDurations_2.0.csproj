@@ -8,7 +8,7 @@
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.1" />
     <PackageReference Include="Prometheus.Client" Version="2.1.0" />
     <PackageReference Include="Prometheus.Client.AspNetCore" Version="2.1.0" />
-    <PackageReference Include="Prometheus.Client.HttpRequestDurations" Version="1.1.0-build23" />
+    <PackageReference Include="Prometheus.Client.HttpRequestDurations" Version="1.1.0-build31" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="1.1.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="1.1.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="1.1.0" />

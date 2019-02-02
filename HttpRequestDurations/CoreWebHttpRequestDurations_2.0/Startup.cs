@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Prometheus.Client.AspNetCore;
@@ -35,8 +37,8 @@ namespace CoreWebHttpRequestDurations
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UsePrometheusServer(q => q.UseDefaultCollectors = false);
 
+            app.UsePrometheusServer(q => q.UseDefaultCollectors = false);
             app.UsePrometheusRequestDurations(q =>
             {
                 q.IncludePath = true;
@@ -51,14 +53,20 @@ namespace CoreWebHttpRequestDurations
                 {
                     "/swagger"
                 };
-
-                q.CustomLabels = new Dictionary<string, string>
-                {
-                    { "service_name", "example" }
-                };
                 q.CustomNormalizePath = new Dictionary<Regex, string>
                 {
                     { new Regex(@"\/[0-9]{1,}(?![a-z])"), "/id" }
+                };
+
+                // Just for example. Not for Production
+                q.CustomLabels = new Dictionary<string, Func<string>>
+                {
+                    {
+                        "application_name", () =>  env.ApplicationName
+                    },
+                    {
+                        "date", () => DateTime.UtcNow.ToString("yyyy-MM-dd")
+                    }
                 };
             });
 

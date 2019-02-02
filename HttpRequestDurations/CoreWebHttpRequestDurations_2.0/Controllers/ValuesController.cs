@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoreWebHttpRequestDurations.Controllers
@@ -7,6 +8,7 @@ namespace CoreWebHttpRequestDurations.Controllers
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
+      
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
