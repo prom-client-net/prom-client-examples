@@ -12,10 +12,9 @@ namespace WebAspNetCore
             var directory = Path.GetDirectoryName(location);
 
             var host = new WebHostBuilder()
+                .UseUrls("http://0.0.0.0:5000")
                 .UseKestrel()
-              
                 .UseContentRoot(directory)
-                .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();
 
