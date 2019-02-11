@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
     <AssemblyName>CoreConsoleMetricServer</AssemblyName>
     <RootNamespace>CoreConsoleMetricServer</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Prometheus.Client" Version="2.0.0" />
-    <PackageReference Include="Prometheus.Client.MetricServer" Version="2.0.0-build19" />
+    <PackageReference Include="Prometheus.Client" Version="2.2.1-build87" />
+    <PackageReference Include="Prometheus.Client.MetricServer" Version="2.1.0" />
   </ItemGroup>
 </Project>

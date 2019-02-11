@@ -4,7 +4,7 @@ using Prometheus.Client;
 using Prometheus.Client.Collectors;
 using Prometheus.Client.MetricPusher;
 
-namespace CoreConsoleMetricPusher_2._1
+namespace CoreConsoleMetricPusher
 {
     internal class Program
     {
@@ -12,7 +12,7 @@ namespace CoreConsoleMetricPusher_2._1
         {                     
             var defaultPusher = new MetricPusher("http://localhost:9091", "pushgateway-testworker", "default");
             var registry = new CollectorRegistry();
-            var customPusher = new MetricPusher(registry, "http://localhost:9091", "pushgateway-testworker", "custom");
+            var customPusher = new MetricPusher(registry, "http://localhost:9091", "pushgateway-testworker", "custom", null, null);
             
             var counter = Metrics.CreateCounter("example_counter1", "help");
             var counterInCustom =  Metrics.WithCustomRegistry(registry).CreateCounter("example_counter2", "help1");

@@ -7,7 +7,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.1" />
     <PackageReference Include="Prometheus.Client.AspNetCore" Version="2.1.0" />
-    <PackageReference Include="Prometheus.Client" Version="2.2.0-build82" />
+    <PackageReference Include="Prometheus.Client" Version="2.2.1-build87" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="appsettings.json">
