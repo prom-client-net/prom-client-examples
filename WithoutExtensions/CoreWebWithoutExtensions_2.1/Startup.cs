@@ -20,11 +20,7 @@ namespace CoreWebWithoutExtensions
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
 
-            CollectorRegistry.Instance.RegisterOnDemandCollectors(new List<IOnDemandCollector>
-            {
-                new DotNetStatsCollector(),
-                new ProcessCollector()
-            });
+            CollectorRegistry.Instance.UseDefaultCollectors();
         }
 
         public IConfigurationRoot Configuration { get; }
