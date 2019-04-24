@@ -15,14 +15,14 @@ namespace WebAspNetCore.Controllers
         private readonly Histogram _histogram = Metrics.CreateHistogram("test_hist", "help_text", "params1");
 
         
-        [HttpGet]
+        [HttpGet("1")]
         public IActionResult Get1()
         {
             return Ok();
         }
     
         
-        [HttpGet]
+        [HttpGet("2")]
         public IActionResult Get2()
         {
             _histogram.Observe(1); // No Crash
