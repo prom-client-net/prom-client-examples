@@ -6,11 +6,26 @@ namespace WebAspNetCore.Controllers
     [Route("[controller]")]
     public class HistogramController : Controller
     {
+        
+        // Write HELP and Type only
+        /* 
+         * # HELP test_hist help_text
+         * # TYPE test_hist histogram
+         */
         private readonly Histogram _histogram = Metrics.CreateHistogram("test_hist", "help_text", "params1");
 
+        
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult Get1()
         {
+            return Ok();
+        }
+    
+        
+        [HttpGet]
+        public IActionResult Get2()
+        {
+            _histogram.Observe(1); // No Crash
             _histogram.Labels("test1").Observe(1);
             _histogram.Labels("test2").Observe(2);
             return Ok();
