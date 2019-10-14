@@ -37,6 +37,7 @@ ProjectSection(SolutionItems) = preProject
 	.gitignore = .gitignore
 	.gitattributes = .gitattributes
 	.editorconfig = .editorconfig
+	renovate.json = renovate.json
 EndProjectSection
 EndProject
 Global
