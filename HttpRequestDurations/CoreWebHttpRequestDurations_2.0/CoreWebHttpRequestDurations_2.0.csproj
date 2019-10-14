@@ -5,7 +5,7 @@
     <RootNamespace>CoreWebHttpRequestDurations</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.4" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.7" />
     <PackageReference Include="Prometheus.Client" Version="3.0.0-rc3-build267" />
     <PackageReference Include="Prometheus.Client.AspNetCore" Version="3.0.0-rc1-build47" />
     <PackageReference Include="Prometheus.Client.HttpRequestDurations" Version="2.0.0-rc1-build56" />
