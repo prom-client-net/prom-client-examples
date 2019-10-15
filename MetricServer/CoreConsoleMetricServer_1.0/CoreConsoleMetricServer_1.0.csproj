@@ -7,6 +7,6 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Prometheus.Client" Version="2.2.2" />
-    <PackageReference Include="Prometheus.Client.MetricServer" Version="2.0.0-build19" />
+    <PackageReference Include="Prometheus.Client.MetricServer" Version="3.0.1" />
   </ItemGroup>
 </Project>
