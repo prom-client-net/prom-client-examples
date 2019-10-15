@@ -7,7 +7,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.7" />
     <PackageReference Include="Prometheus.Client" Version="3.0.3" />
-    <PackageReference Include="Prometheus.Client.AspNetCore" Version="3.0.0-rc1-build47" />
+    <PackageReference Include="Prometheus.Client.AspNetCore" Version="3.0.1" />
     <PackageReference Include="Prometheus.Client.HttpRequestDurations" Version="2.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="4.0.1" />
