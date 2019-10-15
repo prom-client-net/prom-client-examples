@@ -8,7 +8,11 @@ namespace CoreConsoleMetricServer
     {
         static void Main(string[] args)
         {
-            IMetricServer metricServer = new MetricServer("localhost", 9091);
+            IMetricServer metricServer = new MetricServer(null, new MetricServerOptions()
+            {
+                Port = 9091
+            });
+            
             metricServer.Start();
 
             var counter = Metrics.CreateCounter("test_count", "helptext");

@@ -13,7 +13,7 @@ namespace CoreConsoleMetricServer
                 Port = 9091                
             };
             
-            IMetricServer metricServer = new MetricServer(Metrics.DefaultCollectorRegistry, _options);
+            IMetricServer metricServer = new MetricServer(Metrics.DefaultCollectorRegistry, options);
             metricServer.Start();
 
             var counter = Metrics.CreateCounter("test_count", "helptext");
