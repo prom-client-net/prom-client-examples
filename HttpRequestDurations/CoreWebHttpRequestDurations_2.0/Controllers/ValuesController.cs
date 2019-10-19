@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -31,6 +32,12 @@ namespace CoreWebHttpRequestDurations.Controllers
         {
             Thread.Sleep(2000);
             return new string[] {"long", "long"};
+        }
+        
+        [HttpGet("500")]
+        public IEnumerable<string> Get500()
+        {
+            throw new Exception("500");
         }
 
 
