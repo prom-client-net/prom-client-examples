@@ -13,7 +13,7 @@ namespace CoreWebWithoutExtensions.Controllers
             Response.StatusCode = 200;
             using (var outputStream = Response.Body)
             {
-                ScrapeHandler.Process(CollectorRegistry.Instance, outputStream);
+                ScrapeHandler.ProcessAsync(Metrics.DefaultCollectorRegistry, outputStream);
             }
         }
     }
