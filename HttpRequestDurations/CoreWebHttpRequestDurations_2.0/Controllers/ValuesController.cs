@@ -34,7 +34,7 @@ namespace CoreWebHttpRequestDurations.Controllers
             return new string[] {"long", "long"};
         }
         
-        [HttpGet("500")]
+        [HttpGet("err")]
         public IEnumerable<string> Get500()
         {
             throw new Exception("500");
