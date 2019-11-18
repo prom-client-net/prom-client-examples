@@ -5,7 +5,7 @@
     <RootNamespace>WebAspNetCore</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.8" />
     <PackageReference Include="Prometheus.Client.AspNetCore" Version="3.0.1" />
     <PackageReference Include="Prometheus.Client" Version="3.0.3" />
   </ItemGroup>
