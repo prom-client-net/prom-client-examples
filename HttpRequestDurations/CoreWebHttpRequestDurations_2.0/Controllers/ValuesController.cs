@@ -37,7 +37,13 @@ namespace CoreWebHttpRequestDurations.Controllers
         [HttpGet("err")]
         public IEnumerable<string> Get500()
         {
-            throw new Exception("500");
+            throw new Exception("some");
+        }
+        
+        [HttpGet("bad")]
+        public IActionResult Get400()
+        {
+            return BadRequest();
         }
 
 
