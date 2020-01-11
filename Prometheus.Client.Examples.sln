@@ -34,6 +34,8 @@ ProjectSection(SolutionItems) = preProject
 	renovate.json = renovate.json
 EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreWebWithoutExtensions_3.1", "WithoutExtensions\CoreWebWithoutExtensions_3.1\CoreWebWithoutExtensions_3.1.csproj", "{68694D60-A6C6-421B-80D0-C18AD7402238}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,6 +62,10 @@ Global
 		{BF53A12B-99BC-44B1-A265-D40CC572986E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF53A12B-99BC-44B1-A265-D40CC572986E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF53A12B-99BC-44B1-A265-D40CC572986E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68694D60-A6C6-421B-80D0-C18AD7402238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68694D60-A6C6-421B-80D0-C18AD7402238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68694D60-A6C6-421B-80D0-C18AD7402238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68694D60-A6C6-421B-80D0-C18AD7402238}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,5 +76,6 @@ Global
 		{5EAEFC47-FD45-4A01-B86A-B7291F724BFA} = {73AF7CCB-67F6-4951-AB88-958CE2145AAE}
 		{EE6B6F54-E659-49C5-B46C-7894BA02B29D} = {127C8C78-F5D5-4774-A765-40A514420E56}
 		{BF53A12B-99BC-44B1-A265-D40CC572986E} = {1D721336-3902-4952-B9F1-972E11F244A5}
+		{68694D60-A6C6-421B-80D0-C18AD7402238} = {73AF7CCB-67F6-4951-AB88-958CE2145AAE}
 	EndGlobalSection
 EndGlobal

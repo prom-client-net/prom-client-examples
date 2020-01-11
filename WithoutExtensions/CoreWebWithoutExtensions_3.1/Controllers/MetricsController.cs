@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Prometheus.Client;
 
-namespace CoreWebWithoutExtensions.Controllers
+namespace CoreWebWithoutExtensions_3._1.Controllers
 {
     [Route("[controller]")]
     public class MetricsController : Controller
@@ -11,10 +11,8 @@ namespace CoreWebWithoutExtensions.Controllers
         public async Task Get()
         {
             Response.StatusCode = 200;
-            using (var outputStream = Response.Body)
-            {
-                await ScrapeHandler.ProcessAsync(Metrics.DefaultCollectorRegistry, outputStream);
-            }
+            await using var outputStream = Response.Body;
+            await ScrapeHandler.ProcessAsync(Metrics.DefaultCollectorRegistry, outputStream);
         }
     }
 }
