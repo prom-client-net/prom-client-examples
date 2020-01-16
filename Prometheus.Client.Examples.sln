@@ -38,6 +38,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreWebWithoutExtensions_3.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAspNetCore_3.1", "Middleware\WebAspNetCore_3.1\WebAspNetCore_3.1.csproj", "{BD8F96CF-4F67-47C0-9BCD-6C628E1A7ACC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHttpRequestDurations_3.1", "HttpRequestDurations\WebHttpRequestDurations_3.1\WebHttpRequestDurations_3.1.csproj", "{A1E08E3A-3DDA-47AD-AAFA-A8B683500AFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,6 +74,10 @@ Global
 		{BD8F96CF-4F67-47C0-9BCD-6C628E1A7ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD8F96CF-4F67-47C0-9BCD-6C628E1A7ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD8F96CF-4F67-47C0-9BCD-6C628E1A7ACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1E08E3A-3DDA-47AD-AAFA-A8B683500AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1E08E3A-3DDA-47AD-AAFA-A8B683500AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1E08E3A-3DDA-47AD-AAFA-A8B683500AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1E08E3A-3DDA-47AD-AAFA-A8B683500AFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,5 +90,6 @@ Global
 		{BF53A12B-99BC-44B1-A265-D40CC572986E} = {1D721336-3902-4952-B9F1-972E11F244A5}
 		{68694D60-A6C6-421B-80D0-C18AD7402238} = {73AF7CCB-67F6-4951-AB88-958CE2145AAE}
 		{BD8F96CF-4F67-47C0-9BCD-6C628E1A7ACC} = {127C8C78-F5D5-4774-A765-40A514420E56}
+		{A1E08E3A-3DDA-47AD-AAFA-A8B683500AFA} = {48ED99AC-E8A3-4F2C-A99C-3B61E66B778B}
 	EndGlobalSection
 EndGlobal
