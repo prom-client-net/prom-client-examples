@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>ConsoleMetricServer_3._1</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prometheus.Client" Version="3.1.0" />
+    <PackageReference Include="Prometheus.Client.MetricServer" Version="3.1.0-build95" />
+  </ItemGroup>
+
+</Project>
