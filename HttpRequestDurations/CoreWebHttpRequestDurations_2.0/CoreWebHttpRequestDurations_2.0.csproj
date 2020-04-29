@@ -9,9 +9,9 @@
     <PackageReference Include="Prometheus.Client" Version="3.1.0" />
     <PackageReference Include="Prometheus.Client.AspNetCore" Version="3.1.0" />
     <PackageReference Include="Prometheus.Client.HttpRequestDurations" Version="2.2.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.4.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.4.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.4.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.4.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.4.1" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
