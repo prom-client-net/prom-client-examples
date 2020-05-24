@@ -33,31 +33,31 @@ namespace HealthChecks_3._1
             services.AddControllers();
             services.AddHealthChecks();
             services.AddHealthChecks()
-                .AddUrlGroup( new Uri("https://google.com"), "google", HealthStatus.Degraded);
+                .AddUrlGroup(new Uri("https://google.com"), "google", HealthStatus.Degraded);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseRouting();
-           
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
 
-            app.UsePrometheusServer();
-            //app.UseHealthChecksPrometheusExporter();
-            
-            var cr = new CollectorRegistry();
+            app.UsePrometheusServer()
+                .UseHealthChecksPrometheusExporter();
+
+            /*var cr = new CollectorRegistry();
+
             app.UsePrometheusServer(q =>
-            {
-                q.UseDefaultCollectors = false;
-                q.CollectorRegistryInstance = cr;
-                q.MapPath = "/hc-metrics";
-            });
-           
-            app.UseHealthChecksPrometheusExporter(cr);
+                {
+                    q.UseDefaultCollectors = false;
+                    q.CollectorRegistryInstance = cr;
+                    q.MapPath = "/hc-metrics";
+                })
+                .UseHealthChecksPrometheusExporter(cr);*/
         }
     }
 }
