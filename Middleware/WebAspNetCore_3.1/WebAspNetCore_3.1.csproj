@@ -10,7 +10,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Prometheus.Client" Version="3.1.0" />
+      <PackageReference Include="Prometheus.Client" Version="4.0.0" />
       <PackageReference Include="Prometheus.Client.AspNetCore" Version="3.1.0" />
     </ItemGroup>
 
