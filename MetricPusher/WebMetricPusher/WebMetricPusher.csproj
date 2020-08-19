@@ -3,7 +3,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Prometheus.Client" Version="4.0.0" />
+    <PackageReference Include="Prometheus.Client" Version="4.1.0" />
     <PackageReference Include="Prometheus.Client.HttpRequestDurations" Version="3.0.0" />
     <PackageReference Include="Prometheus.Client.MetricPusher" Version="1.1.0" />
   </ItemGroup>
