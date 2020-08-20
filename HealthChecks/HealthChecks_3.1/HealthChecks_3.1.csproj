@@ -5,7 +5,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AspNetCore.HealthChecks.Uris" Version="3.1.2" />
-    <PackageReference Include="Prometheus.Client.AspNetCore" Version="4.0.0" />
+    <PackageReference Include="Prometheus.Client.AspNetCore" Version="4.1.0" />
     <PackageReference Include="Prometheus.Client.HealthChecks" Version="0.1.0" />
   </ItemGroup>
 </Project>
