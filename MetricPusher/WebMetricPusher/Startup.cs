@@ -1,16 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using Prometheus.Client.Collectors.Abstractions;
+using Prometheus.Client.DependencyInjection;
 using Prometheus.Client.HttpRequestDurations;
 using Prometheus.Client.MetricPusher;
 
@@ -29,6 +22,7 @@ namespace WebMetricPusher
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddMetricFactory();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,7 +41,8 @@ namespace WebMetricPusher
                 q.IncludeMethod = true;
             });
 
-            var worker = new MetricPushServer( new MetricPusher("http://localhost:9091", "pushgateway"));
+            var registry = app.ApplicationServices.GetService<ICollectorRegistry>();
+            var worker = new MetricPushServer( new MetricPusher(registry, "http://localhost:9091", "pushgateway",null, null, null));
             worker.Start();
         }
     }

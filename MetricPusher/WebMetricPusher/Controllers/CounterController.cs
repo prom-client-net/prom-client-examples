@@ -1,19 +1,24 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Prometheus.Client;
+using Prometheus.Client.Abstractions;
 
-namespace CoreWebWithoutExtensions_3._1.Controllers
+namespace WebMetricPusher.Controllers
 {
     [Route("[controller]")]
     public class CounterController : Controller
     {
-        private readonly Counter _counter = Metrics.CreateCounter("my_counter", "some help about this");
+        private readonly ICounter _counter;
+
+        public CounterController(IMetricFactory metricFactory)
+        {
+            this._counter = metricFactory.CreateCounter("my_counter", "some help about this");
+        }
 
         [HttpGet]
         public IActionResult Get()
         {
-            _counter.Inc();
+            this._counter.Inc();
 
-            return Ok();
+            return this.Ok();
         }
     }
 }

@@ -1,19 +1,27 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Prometheus.Client;
+using Prometheus.Client.Collectors.Abstractions;
 
 namespace CoreWebWithoutExtensions.Controllers
 {
     [Route("[controller]")]
     public class MetricsController : Controller
     {
+        private readonly ICollectorRegistry _registry;
+
+        public MetricsController(ICollectorRegistry registry)
+        {
+            _registry = registry;
+        }
+
         [HttpGet]
         public async Task Get()
         {
             Response.StatusCode = 200;
             using (var outputStream = Response.Body)
             {
-                await ScrapeHandler.ProcessAsync(Metrics.DefaultCollectorRegistry, outputStream);
+                await ScrapeHandler.ProcessAsync(_registry, outputStream);
             }
         }
     }

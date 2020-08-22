@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Prometheus.Client;
+using Prometheus.Client.Abstractions;
 
 namespace WebAspNetCore.Controllers
 {
@@ -12,9 +13,13 @@ namespace WebAspNetCore.Controllers
          * # HELP test_hist help_text
          * # TYPE test_hist histogram
          */
-        private readonly Histogram _histogram = Metrics.CreateHistogram("test_hist", "help_text", "params1");
+        private readonly IMetricFamily<IHistogram> _histogram;
 
-        
+        public HistogramController(IMetricFactory metricFactory)
+        {
+            _histogram = metricFactory.CreateHistogram("test_hist", "help_text", "params1", "params2");
+        }
+
         [HttpGet("1")]
         public IActionResult Get1()
         {
@@ -26,8 +31,8 @@ namespace WebAspNetCore.Controllers
         public IActionResult Get2()
         {
             _histogram.Observe(1); // No Crash
-            _histogram.Labels("test1").Observe(1);
-            _histogram.Labels("test2").Observe(2);
+            _histogram.WithLabels("test1", "value1").Observe(1);
+            _histogram.WithLabels("test2", "value2").Observe(2);
             return Ok();
         }
     }

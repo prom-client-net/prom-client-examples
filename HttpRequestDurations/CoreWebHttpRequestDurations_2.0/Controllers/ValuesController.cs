@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoreWebHttpRequestDurations.Controllers
@@ -14,16 +13,13 @@ namespace CoreWebHttpRequestDurations.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] {"value1", "value2"};
+            return new [] {"value1", "value2"};
         }
 
         [HttpGet("{id}")]
         public IEnumerable<string> Get(int id)
         {
-            return new string[]
-            {
-                $"value1_{id}", $"value2_{id}"
-            };
+            return new [] { $"value1_{id}", $"value2_{id}" };
         }
         
 
@@ -31,7 +27,7 @@ namespace CoreWebHttpRequestDurations.Controllers
         public IEnumerable<string> GetLong()
         {
             Thread.Sleep(2000);
-            return new string[] {"long", "long"};
+            return new [] {"long", "long"};
         }
         
         [HttpGet("err")]

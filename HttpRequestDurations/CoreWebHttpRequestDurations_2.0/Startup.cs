@@ -1,16 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Prometheus.Client.AspNetCore;
+using Prometheus.Client.DependencyInjection;
 using Prometheus.Client.HttpRequestDurations;
-using Swashbuckle.AspNetCore.Swagger;
 
 namespace CoreWebHttpRequestDurations
 {
@@ -26,6 +24,7 @@ namespace CoreWebHttpRequestDurations
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMetricFactory();
             services.AddMvc();
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" }); });
         }

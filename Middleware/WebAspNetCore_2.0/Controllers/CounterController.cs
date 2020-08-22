@@ -1,12 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Prometheus.Client;
+using Prometheus.Client.Abstractions;
 
 namespace WebAspNetCore.Controllers
 {
     [Route("[controller]")]
     public class CounterController : Controller
     {
-        readonly Counter _counter = Metrics.CreateCounter("myCounter", "some help about this");
+        readonly ICounter _counter;
+
+        public CounterController(IMetricFactory metricFactory)
+        {
+            _counter = metricFactory.CreateCounter("myCounter", "some help about this");
+        }
 
         [HttpGet]
         public IActionResult Get()
