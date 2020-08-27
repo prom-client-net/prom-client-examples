@@ -1,12 +1,9 @@
-﻿using System.Collections.Generic;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Prometheus.Client;
-using Prometheus.Client.Collectors;
-using Prometheus.Client.Collectors.Abstractions;
+using Prometheus.Client.DependencyInjection;
 
 namespace CoreWebWithoutExtensions
 {
@@ -29,6 +26,7 @@ namespace CoreWebWithoutExtensions
         {
             // Add framework services.
             services.AddMvc();
+            services.AddMetricFactory();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

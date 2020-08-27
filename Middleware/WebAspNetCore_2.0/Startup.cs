@@ -2,9 +2,9 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using Prometheus.Client.AspNetCore;
 using Prometheus.Client.Collectors;
+using Prometheus.Client.DependencyInjection;
 
 namespace WebAspNetCore
 {
@@ -28,6 +28,7 @@ namespace WebAspNetCore
         {
             // Add framework services.
             services.AddMvc();
+            services.AddMetricFactory();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

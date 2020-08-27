@@ -25,18 +25,14 @@ namespace CoreWebWithoutExtensions_3._1
         {
             services.AddMetricFactory();
             services.AddControllers();
+            services.AddMetricFactory();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseRouting();
-            
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
-            
+
             app.UsePrometheusServer(q => q.UseDefaultCollectors = false);
             app.UsePrometheusRequestDurations(q =>
             {
@@ -67,6 +63,11 @@ namespace CoreWebWithoutExtensions_3._1
                         "date", () => DateTime.UtcNow.ToString("yyyy-MM-dd")
                     }
                 };
+            });
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
             });
         }
     }
