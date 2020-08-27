@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using System;
+using Microsoft.AspNetCore.Mvc;
+using Prometheus.Client;
 using Prometheus.Client.Abstractions;
 
 namespace CoreWebWithoutExtensions_3._1.Controllers
@@ -7,23 +9,22 @@ namespace CoreWebWithoutExtensions_3._1.Controllers
     public class CounterController : Controller
     {
         private readonly ICounter _counter;
-        private readonly IMetricFamily<ICounter> _counterFamily;
-        private readonly IMetricFamily<ICounter, (string Controller, string Action)> _counterFamilyTuple;
-
+        private readonly ICounter _counterTs;
+        private readonly IMetricFamily<ICounter, ValueTuple<string, string>> _conterLabel;
+        
         public CounterController(IMetricFactory metricFactory)
         {
-            _counter = metricFactory.CreateCounter("my_counter", "some help about this");
-            _counterFamily = metricFactory.CreateCounter("my_counter_ts", "some help about this", true, "label1", "label2");
-            _counterFamilyTuple = metricFactory.CreateCounter("my_counter_tuple", "some help about this", ("Controller", "Action"), true);
+            _counter =  metricFactory.CreateCounter("my_counter", "some help about this");
+            _conterLabel = metricFactory.CreateCounter("my_counter_label", "some help about this", ("label1","label2"));
+            _counterTs = metricFactory.CreateCounter("my_counter_ts", "some help about this", true);
         }
-
+        
         [HttpGet]
         public IActionResult Get()
-        {
+        { 
             _counter.Inc();
-            _counterFamily.WithLabels("value1", "value2").Inc(3);
-            _counterFamilyTuple.WithLabels(("Counter", "Get")).Inc(5);
-
+            _counterTs.Inc(3);
+            _conterLabel.WithLabels(("my_label", "my_label2")).Inc();
             return Ok();
         }
     }
