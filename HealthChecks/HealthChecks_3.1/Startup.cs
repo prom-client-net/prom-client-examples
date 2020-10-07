@@ -1,10 +1,15 @@
 using System;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
+using Prometheus.Client;
+using Prometheus.Client.Abstractions;
 using Prometheus.Client.AspNetCore;
+using Prometheus.Client.Collectors;
+using Prometheus.Client.Collectors.Abstractions;
 using Prometheus.Client.HealthChecks;
 
 namespace HealthChecks_3._1
@@ -22,9 +27,11 @@ namespace HealthChecks_3._1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddHealthChecks();
+            services.AddSingleton<ICollectorRegistry, CollectorRegistry>();
+            services.AddSingleton<IMetricFactory, MetricFactory>();
             services.AddHealthChecks()
-                .AddUrlGroup(new Uri("https://google.com"), "google", HealthStatus.Degraded);
+                .AddUrlGroup(new Uri("https://google.com"), "google", HealthStatus.Degraded)
+                .WriteToPrometheus();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,19 +43,13 @@ namespace HealthChecks_3._1
             {
                 endpoints.MapControllers();
             });
+            
+            app.UseHealthChecks("/hc", new HealthCheckOptions
+            {
+                Predicate = r => true
+            });
 
-            app.UsePrometheusServer()
-                .UseHealthChecksPrometheusExporter();
-
-            /*var cr = new CollectorRegistry();
-
-            app.UsePrometheusServer(q =>
-                {
-                    q.UseDefaultCollectors = false;
-                    q.CollectorRegistryInstance = cr;
-                    q.MapPath = "/hc-metrics";
-                })
-                .UseHealthChecksPrometheusExporter(cr);*/
+            app.UsePrometheusServer();
         }
     }
 }
