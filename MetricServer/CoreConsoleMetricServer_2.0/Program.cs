@@ -14,7 +14,7 @@ namespace CoreConsoleMetricServer
                 Port = 9091
             };
 
-            var registry = new CollectorRegistry();
+            ICollectorRegistry registry = new CollectorRegistry();
             var factory = new MetricFactory(registry);
 
             IMetricServer metricServer = new MetricServer(registry, options);

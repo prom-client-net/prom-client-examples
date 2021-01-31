@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Prometheus.Client.Collectors.Abstractions;
+using Prometheus.Client.Collectors;
 using Prometheus.Client.DependencyInjection;
 using Prometheus.Client.HttpRequestDurations;
 using Prometheus.Client.MetricPusher;

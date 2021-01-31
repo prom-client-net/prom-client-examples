@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Prometheus.Client.Abstractions;
+using Prometheus.Client;
 
 namespace WebMetricPusher.Controllers
 {

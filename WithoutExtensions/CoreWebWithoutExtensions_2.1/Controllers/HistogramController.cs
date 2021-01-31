@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Prometheus.Client;
-using Prometheus.Client.Abstractions;
 
 namespace CoreWebWithoutExtensions.Controllers
 {

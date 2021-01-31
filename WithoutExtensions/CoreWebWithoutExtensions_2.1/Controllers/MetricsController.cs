@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Prometheus.Client;
-using Prometheus.Client.Collectors.Abstractions;
+using Prometheus.Client.Collectors;
 
 namespace CoreWebWithoutExtensions.Controllers
 {
