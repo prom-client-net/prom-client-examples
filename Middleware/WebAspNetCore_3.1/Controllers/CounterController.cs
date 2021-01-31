@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Prometheus.Client;
 
 namespace CoreWebWithoutExtensions_3._1.Controllers
 {
