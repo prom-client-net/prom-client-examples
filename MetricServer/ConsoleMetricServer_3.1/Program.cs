@@ -3,21 +3,21 @@ using Prometheus.Client;
 using Prometheus.Client.Collectors;
 using Prometheus.Client.MetricServer;
 
-namespace ConsoleMetricServer_3._1
+namespace ConsoleMetricServer
 {
     class Program
     {
         static void Main()
         {
+            var registry = new CollectorRegistry();
             var options = new MetricServerOptions
             {
-                Port = 9091
+                CollectorRegistryInstance = registry,
+                UseDefaultCollectors = true
             };
-            var registry = new CollectorRegistry();
             var factory = new MetricFactory(registry);
 
-
-            IMetricServer metricServer = new MetricServer(registry, options);
+            IMetricServer metricServer = new MetricServer(options);
             metricServer.Start();
 
             var counter = factory.CreateCounter("test_count", "helptext");

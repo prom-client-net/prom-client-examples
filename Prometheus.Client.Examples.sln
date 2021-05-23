@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.0.0
 MinimumVisualStudioVersion = 10.0.0.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MetricServer", "MetricServer", "{5958A430-567D-47BC-AFCE-CC86EF3BE9F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreConsoleMetricServer_2.1", "MetricServer\CoreConsoleMetricServer_2.1\CoreConsoleMetricServer_2.1.csproj", "{C98FDA57-2C3B-44C8-91B4-BEEA006D5182}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleMetricServer_2.1", "MetricServer\ConsoleMetricServer_2.1\ConsoleMetricServer_2.1.csproj", "{C98FDA57-2C3B-44C8-91B4-BEEA006D5182}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WithoutExtensions", "WithoutExtensions", "{73AF7CCB-67F6-4951-AB88-958CE2145AAE}"
 EndProject
@@ -45,6 +45,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthChecks_3.1", "HealthChecks\HealthChecks_3.1\HealthChecks_3.1.csproj", "{ADFBF64A-E024-495E-B6A8-C35C48F59BA3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMetricPusher", "MetricPusher\WebMetricPusher\WebMetricPusher.csproj", "{D6A7C475-F53C-415B-B2F9-761DEAF8382A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerMetricServer_5.0", "MetricServer\WorkerMetricServer_5.0\WorkerMetricServer_5.0.csproj", "{A3B26DC8-FA64-4F70-951A-CA577B44CAB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -92,6 +94,10 @@ Global
 		{D6A7C475-F53C-415B-B2F9-761DEAF8382A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6A7C475-F53C-415B-B2F9-761DEAF8382A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6A7C475-F53C-415B-B2F9-761DEAF8382A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3B26DC8-FA64-4F70-951A-CA577B44CAB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3B26DC8-FA64-4F70-951A-CA577B44CAB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3B26DC8-FA64-4F70-951A-CA577B44CAB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3B26DC8-FA64-4F70-951A-CA577B44CAB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,5 +113,6 @@ Global
 		{22F0B75E-A140-469F-B30B-70270094D593} = {5958A430-567D-47BC-AFCE-CC86EF3BE9F1}
 		{ADFBF64A-E024-495E-B6A8-C35C48F59BA3} = {E915D04B-7AF9-4BFA-815D-A7B6344E9A59}
 		{D6A7C475-F53C-415B-B2F9-761DEAF8382A} = {1D721336-3902-4952-B9F1-972E11F244A5}
+		{A3B26DC8-FA64-4F70-951A-CA577B44CAB1} = {5958A430-567D-47BC-AFCE-CC86EF3BE9F1}
 	EndGlobalSection
 EndGlobal

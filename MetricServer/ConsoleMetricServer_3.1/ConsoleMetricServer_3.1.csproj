@@ -2,11 +2,11 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>ConsoleMetricServer_3._1</RootNamespace>
+    <RootNamespace>ConsoleMetricServer</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Prometheus.Client" Version="4.4.0" />
-    <PackageReference Include="Prometheus.Client.MetricServer" Version="4.1.0" />
+    <PackageReference Include="Prometheus.Client.MetricServer" Version="4.2.0-dev-1621780092" />
   </ItemGroup>
 
 </Project>
