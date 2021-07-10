@@ -5,7 +5,7 @@
     <RootNamespace>ConsoleMetricServer</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Prometheus.Client" Version="4.4.0" />
+    <PackageReference Include="Prometheus.Client" Version="4.5.0" />
     <PackageReference Include="Prometheus.Client.MetricServer" Version="4.3.1" />
   </ItemGroup>
 
