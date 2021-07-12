@@ -7,6 +7,6 @@
   <ItemGroup>
     <PackageReference Include="Prometheus.Client.MetricPusher" Version="2.1.0" />
     <PackageReference Include="Prometheus.Client" Version="4.5.1" />
-    <PackageReference Include="Prometheus.Client.DependencyInjection" Version="0.6.0" />
+    <PackageReference Include="Prometheus.Client.DependencyInjection" Version="0.6.1" />
   </ItemGroup>
 </Project>
