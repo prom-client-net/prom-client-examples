@@ -4,7 +4,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Prometheus.Client" Version="4.5.3" />
-    <PackageReference Include="Prometheus.Client.HttpRequestDurations" Version="3.4.1" />
+    <PackageReference Include="Prometheus.Client.HttpRequestDurations" Version="3.5.0" />
     <PackageReference Include="Prometheus.Client.MetricPusher" Version="2.2.0" />
     <PackageReference Include="Prometheus.Client.DependencyInjection" Version="1.0.0" />
   </ItemGroup>
