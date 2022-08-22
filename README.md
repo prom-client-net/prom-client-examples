@@ -1,7 +1,7 @@
 # Prometheus.Client.Examples
 
-Code Examples for [Prometheus.Client.*](https://github.com/PrometheusClientNet)
+Code Examples for [Prometheus.Client.*](https://github.com/prom-client-net).
 
-## Support
+## License
 
-If you are having problems, send a mail to [prometheus@phnx47.net](mailto://prometheus@phnx47.net). I will try to help you.
+All contents of this package are licensed under the [MIT license](https://opensource.org/licenses/MIT).
