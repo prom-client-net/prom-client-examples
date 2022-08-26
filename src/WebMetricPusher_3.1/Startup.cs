@@ -30,10 +30,7 @@ namespace WebMetricPusher
         {
             app.UseRouting();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
 
             app.UsePrometheusRequestDurations(q =>
             {
@@ -42,7 +39,14 @@ namespace WebMetricPusher
             });
 
             var registry = app.ApplicationServices.GetService<ICollectorRegistry>();
-            var worker = new MetricPushServer( new MetricPusher(registry, "http://localhost:9091", "pushgateway",null, null, null));
+            var pusher = new MetricPusher(new MetricPusherOptions
+            {
+                CollectorRegistry = registry,
+                Endpoint = "http://localhost:9091",
+                Job = "pushgateway",
+                Instance = "instance"
+            });
+            var worker = new MetricPushServer(pusher);
             worker.Start();
         }
     }
