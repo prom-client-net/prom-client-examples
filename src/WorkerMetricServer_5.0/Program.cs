@@ -32,7 +32,7 @@ namespace WorkerMetricServer
                 metricServer.Start();
                 await host.RunAsync();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 Console.WriteLine("Host Terminated Unexpectedly");
             }
