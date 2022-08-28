@@ -10,7 +10,7 @@ using Prometheus.Client.AspNetCore;
 using Prometheus.Client.Collectors;
 using Prometheus.Client.HealthChecks;
 
-namespace HealthChecks_3._1
+namespace HealthChecks
 {
     public class Startup
     {

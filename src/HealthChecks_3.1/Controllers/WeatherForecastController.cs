@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 
-namespace HealthChecks_3._1.Controllers
+namespace HealthChecks.Controllers
 {
     [ApiController]
     [Route("[controller]")]

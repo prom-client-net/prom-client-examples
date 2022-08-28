@@ -1,6 +1,6 @@
 using System;
 
-namespace HealthChecks_3._1
+namespace HealthChecks
 {
     public class WeatherForecast
     {
