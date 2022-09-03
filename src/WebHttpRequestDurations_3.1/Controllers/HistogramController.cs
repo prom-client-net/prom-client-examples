@@ -11,7 +11,7 @@ namespace CoreWebWithoutExtensions_3._1.Controllers
 
         public HistogramController(IMetricFactory metricFactory)
         {
-            _histogram = metricFactory.CreateHistogram("test_hist", "help_text", "params1");
+            _histogram = metricFactory.CreateHistogram("test_hist", "help_text",  ValueTuple.Create("params1"));
         }
         
         [HttpGet]
