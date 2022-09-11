@@ -4,7 +4,7 @@
     <RootNamespace>CoreWebWithoutExtensions_3._1</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Prometheus.Client" Version="5.0.0" />
+    <PackageReference Include="Prometheus.Client" Version="5.1.0" />
     <PackageReference Include="Prometheus.Client.AspNetCore" Version="4.8.0" />
     <PackageReference Include="Prometheus.Client.DependencyInjection" Version="1.2.1" />
     <PackageReference Include="Prometheus.Client.HttpRequestDurations" Version="3.6.0" />
