@@ -4,7 +4,7 @@
     <RootNamespace>CoreWebWithoutExtensions</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Prometheus.Client" Version="5.0.0" />
+    <PackageReference Include="Prometheus.Client" Version="5.1.0" />
     <PackageReference Include="Prometheus.Client.DependencyInjection" Version="1.2.1" />
   </ItemGroup>
 </Project>
