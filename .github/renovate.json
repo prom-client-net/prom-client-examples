@@ -1,14 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
+   "extends": [
     ":dependencyDashboard",
     ":semanticPrefixFixDepsChoreOthers",
-    ":prHourlyLimit2",
-    ":prConcurrentLimit10",
     "group:monorepos",
     "workarounds:all"
   ],
-  "separateMajorMinor": false,
   "labels": [
     "dependencies"
   ],
@@ -19,18 +16,9 @@
     {
       "automerge": true,
       "sourceUrlPrefixes": [
-        "https://github.com/coverlet-coverage",
-        "https://github.com/xunit",
-        "https://github.com/microsoft/vstest"
-      ],
-      "groupName": "Tests"
-    },
-    {
-      "automerge": true,
-      "sourceUrlPrefixes": [
         "https://github.com/prom-client-net"
       ],
-      "groupName": "Prometheus.Client"
+      "groupName": "prom-client"
     }
   ]
 }
