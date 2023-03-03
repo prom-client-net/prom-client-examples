@@ -9,7 +9,7 @@ using Prometheus.Client.AspNetCore;
 using Prometheus.Client.DependencyInjection;
 using Prometheus.Client.HttpRequestDurations;
 
-namespace CoreWebWithoutExtensions_3._1
+namespace WebHttpRequestDurations
 {
     public class Startup
     {
@@ -23,7 +23,6 @@ namespace CoreWebWithoutExtensions_3._1
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMetricFactory();
             services.AddControllers();
             services.AddMetricFactory();
         }

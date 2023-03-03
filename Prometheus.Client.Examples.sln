@@ -10,6 +10,7 @@ ProjectSection(SolutionItems) = preProject
 	.gitignore = .gitignore
 	.gitattributes = .gitattributes
 	.editorconfig = .editorconfig
+	Directory.Build.props = Directory.Build.props
 EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{36AEE552-0BEB-4368-9AE9-5F6537B1C5AE}"

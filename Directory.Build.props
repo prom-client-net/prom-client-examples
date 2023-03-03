@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+</Project>
