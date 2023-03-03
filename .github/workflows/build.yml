@@ -3,16 +3,16 @@ name: 💿 Build
 on:
   push:
     branches:
-      - "master"
+      - "main"
   pull_request:
     branches:
-      - "master"
+      - "main"
   workflow_dispatch:
 
 jobs:
   build:
     name: 🏭 Build
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: 🚚 Checkout
         uses: actions/checkout@v3
