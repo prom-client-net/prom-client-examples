@@ -20,5 +20,8 @@
       ],
       "groupName": "prom-client"
     }
+  ],
+  "ignoreDeps": [
+    "Microsoft.Extensions.Hosting"
   ]
 }
