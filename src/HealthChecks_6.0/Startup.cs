@@ -27,9 +27,11 @@ namespace HealthChecks
             services.AddControllers();
             services.AddSingleton<ICollectorRegistry, CollectorRegistry>();
             services.AddSingleton<IMetricFactory, MetricFactory>();
-            services.AddHealthChecks()
-                .AddUrlGroup(new Uri("https://google.com"), "google", HealthStatus.Degraded)
-                .WriteToPrometheus();
+            services
+                .AddHealthChecks()
+                .AddUrlGroup(new Uri("https://google.com"), "google", HealthStatus.Unhealthy)
+                .AddUrlGroup(new Uri("https://invalidurl"), "invalidurl", HealthStatus.Degraded);
+            services.AddPrometheusHealthCheckPublisher();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,7 +43,7 @@ namespace HealthChecks
             {
                 endpoints.MapControllers();
             });
-            
+
             app.UseHealthChecks("/hc", new HealthCheckOptions
             {
                 Predicate = r => true
