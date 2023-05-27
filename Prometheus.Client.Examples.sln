@@ -3,29 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.0.0
 MinimumVisualStudioVersion = 10.0.0.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{6EFAE2F5-5F7B-481B-90D9-8F9E94579C1A}"
-ProjectSection(SolutionItems) = preProject
-	LICENSE = LICENSE
-	README.md = README.md
-	.gitignore = .gitignore
-	.gitattributes = .gitattributes
-	.editorconfig = .editorconfig
-	Directory.Build.props = Directory.Build.props
-EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{36AEE552-0BEB-4368-9AE9-5F6537B1C5AE}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{AE447AC2-8068-46DD-B927-242BF0D10D5A}"
-	ProjectSection(SolutionItems) = preProject
-		.github\CODEOWNERS = .github\CODEOWNERS
-		.github\renovate.json = .github\renovate.json
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{7751EB72-39DF-4C5B-BE8B-70F134F5C353}"
-	ProjectSection(SolutionItems) = preProject
-		.github\workflows\build.yml = .github\workflows\build.yml
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleMetricServer_3.1", "src\ConsoleMetricServer_3.1\ConsoleMetricServer_3.1.csproj", "{728A498E-8D38-45B9-A6DF-DEBEFB6563FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreWebWithoutExtensions_3.1", "src\CoreWebWithoutExtensions_3.1\CoreWebWithoutExtensions_3.1.csproj", "{A03FD2F8-8F18-44AB-9D01-16D15208B087}"
@@ -79,13 +56,5 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{7751EB72-39DF-4C5B-BE8B-70F134F5C353} = {AE447AC2-8068-46DD-B927-242BF0D10D5A}
-		{728A498E-8D38-45B9-A6DF-DEBEFB6563FD} = {36AEE552-0BEB-4368-9AE9-5F6537B1C5AE}
-		{A03FD2F8-8F18-44AB-9D01-16D15208B087} = {36AEE552-0BEB-4368-9AE9-5F6537B1C5AE}
-		{237FECAD-9D7C-43F4-A240-974A5ADE0DE7} = {36AEE552-0BEB-4368-9AE9-5F6537B1C5AE}
-		{297EA5CD-C468-40CA-A97C-8A5DC28CF701} = {36AEE552-0BEB-4368-9AE9-5F6537B1C5AE}
-		{83246BAD-85BA-4532-84BF-70D18B7FF66A} = {36AEE552-0BEB-4368-9AE9-5F6537B1C5AE}
-		{FC8559F9-D535-47C7-9964-AE754E8FB158} = {36AEE552-0BEB-4368-9AE9-5F6537B1C5AE}
-		{191C271F-F884-4C4F-8C8B-9A9C0B413104} = {36AEE552-0BEB-4368-9AE9-5F6537B1C5AE}
 	EndGlobalSection
 EndGlobal
