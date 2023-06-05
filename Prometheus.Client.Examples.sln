@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreWebWithoutExtensions_3.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthChecks_6.0", "src\HealthChecks_6.0\HealthChecks_6.0.csproj", "{237FECAD-9D7C-43F4-A240-974A5ADE0DE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAspNetCore_3.1", "src\WebAspNetCore_3.1\WebAspNetCore_3.1.csproj", "{297EA5CD-C468-40CA-A97C-8A5DC28CF701}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore_6.0", "src\AspNetCore_6.0\AspNetCore_6.0.csproj", "{297EA5CD-C468-40CA-A97C-8A5DC28CF701}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHttpRequestDurations_3.1", "src\WebHttpRequestDurations_3.1\WebHttpRequestDurations_3.1.csproj", "{83246BAD-85BA-4532-84BF-70D18B7FF66A}"
 EndProject

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace CoreWebWithoutExtensions_3._1
+namespace AspNetCore
 {
     public class Program
     {

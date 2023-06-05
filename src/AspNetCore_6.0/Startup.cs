@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Prometheus.Client.AspNetCore;
 using Prometheus.Client.DependencyInjection;
 
-namespace CoreWebWithoutExtensions_3._1
+namespace AspNetCore
 {
     public class Startup
     {
@@ -27,7 +27,11 @@ namespace CoreWebWithoutExtensions_3._1
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseRouting();
-            app.UsePrometheusServer();
+            app.UsePrometheusServer(q =>
+            {
+                q.MapPath = "/prom";
+                q.MetricPrefixName = "default_";
+            });
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
