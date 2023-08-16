@@ -4,6 +4,9 @@ using Prometheus.Client;
 
 namespace WebHttpRequestDurations.Controllers
 {
+
+
+
     [Route("[controller]")]
     public class HistogramController : Controller
     {
@@ -11,9 +14,9 @@ namespace WebHttpRequestDurations.Controllers
 
         public HistogramController(IMetricFactory metricFactory)
         {
-            _histogram = metricFactory.CreateHistogram("test_hist", "help_text",  ValueTuple.Create("params1"));
+            _histogram = metricFactory.CreateHistogram("test_hist", "help_text", ValueTuple.Create("params1"));
         }
-        
+
         [HttpGet]
         public IActionResult Get()
         {

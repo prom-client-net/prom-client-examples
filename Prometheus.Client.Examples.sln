@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMetricPusher_3.1", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerMetricServer_5.0", "src\WorkerMetricServer_5.0\WorkerMetricServer_5.0.csproj", "{191C271F-F884-4C4F-8C8B-9A9C0B413104}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostedServiceMetricPusher_6.0", "src\HostedServiceMetricPusher_6.0\HostedServiceMetricPusher_6.0.csproj", "{9652546D-9A18-411D-8057-B6D1F5F32C5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{191C271F-F884-4C4F-8C8B-9A9C0B413104}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{191C271F-F884-4C4F-8C8B-9A9C0B413104}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{191C271F-F884-4C4F-8C8B-9A9C0B413104}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9652546D-9A18-411D-8057-B6D1F5F32C5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9652546D-9A18-411D-8057-B6D1F5F32C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9652546D-9A18-411D-8057-B6D1F5F32C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9652546D-9A18-411D-8057-B6D1F5F32C5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

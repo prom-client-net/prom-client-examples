@@ -6,40 +6,39 @@ using Prometheus.Client.Collectors;
 using Prometheus.Client.DependencyInjection;
 using Prometheus.Client.MetricServer;
 
-namespace WorkerMetricServer
+namespace WorkerMetricServer;
+
+public class Program
 {
-    public class Program
+    public static async Task Main(string[] args)
     {
-        public static async Task Main(string[] args)
+        var host = Host.CreateDefaultBuilder(args)
+            .ConfigureServices((_, services) =>
+            {
+                services.AddMetricFactory();
+                services.AddSingleton<IMetricServer>(sp => new MetricServer(
+                    new MetricServerOptions
+                    {
+                        CollectorRegistryInstance = sp.GetRequiredService<ICollectorRegistry>(),
+                        UseDefaultCollectors = true
+                    }));
+                services.AddHostedService<Worker>();
+            }).Build();
+
+        var metricServer = host.Services.GetRequiredService<IMetricServer>();
+
+        try
         {
-            var host = Host.CreateDefaultBuilder(args)
-                .ConfigureServices((_, services) =>
-                {
-                    services.AddMetricFactory();
-                    services.AddSingleton<IMetricServer>(sp => new MetricServer(
-                        new MetricServerOptions
-                        {
-                            CollectorRegistryInstance = sp.GetRequiredService<ICollectorRegistry>(),
-                            UseDefaultCollectors = true
-                        }));
-                    services.AddHostedService<Worker>();
-                }).Build();
-
-            var metricServer = host.Services.GetRequiredService<IMetricServer>();
-
-            try
-            {
-                metricServer.Start();
-                await host.RunAsync();
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("Host Terminated Unexpectedly");
-            }
-            finally
-            {
-                metricServer.Stop();
-            }
+            metricServer.Start();
+            await host.RunAsync();
+        }
+        catch (Exception)
+        {
+            Console.WriteLine("Host Terminated Unexpectedly");
+        }
+        finally
+        {
+            metricServer.Stop();
         }
     }
 }
