@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prometheus.Client" Version="5.2.0" />
+    <PackageReference Include="Prometheus.Client.DependencyInjection" Version="1.2.1" />
+    <PackageReference Include="Prometheus.Client.MetricPusher.HostedService" Version="0.0.2-dev-1692180947-a23d885" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+  </ItemGroup>
+</Project>
