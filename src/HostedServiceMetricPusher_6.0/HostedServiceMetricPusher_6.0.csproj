@@ -5,7 +5,7 @@
   <ItemGroup>
     <PackageReference Include="Prometheus.Client" Version="5.2.0" />
     <PackageReference Include="Prometheus.Client.DependencyInjection" Version="1.2.1" />
-    <PackageReference Include="Prometheus.Client.MetricPusher.HostedService" Version="0.1.0" />
+    <PackageReference Include="Prometheus.Client.MetricPusher.HostedService" Version="0.2.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
   </ItemGroup>
 </Project>
