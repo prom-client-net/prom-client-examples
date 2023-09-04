@@ -1,4 +1,4 @@
-name: 💿 Build
+name: Build
 
 on:
   push:
@@ -11,14 +11,14 @@ on:
 
 jobs:
   build:
-    name: 🏭 Build
+    name: Build
     runs-on: ubuntu-22.04
     steps:
-      - name: 🚚 Checkout
+      - name: Checkout
         uses: actions/checkout@v4
-      - name: 🛠 Setup .NET Core
+      - name: Setup .NET Core
         uses: actions/setup-dotnet@v3
-      - name: ⚙ Restore
+      - name: Restore
         run: dotnet restore
-      - name: 🏭 Build
+      - name: Build
         run: dotnet build --no-restore -c Release
