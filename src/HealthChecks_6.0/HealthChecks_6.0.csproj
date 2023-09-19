@@ -5,7 +5,7 @@
     <InvariantGlobalization>true</InvariantGlobalization>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="AspNetCore.HealthChecks.Uris" Version="6.0.3" />
+    <PackageReference Include="AspNetCore.HealthChecks.Uris" Version="7.0.0" />
     <PackageReference Include="Prometheus.Client" Version="5.2.0" />
     <PackageReference Include="Prometheus.Client.AspNetCore" Version="5.0.0" />
     <PackageReference Include="Prometheus.Client.HealthChecks" Version="1.1.1" />
