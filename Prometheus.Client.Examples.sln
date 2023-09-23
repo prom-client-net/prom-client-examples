@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHttpRequestDurations_3.1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMetricPusher_3.1", "src\WebMetricPusher_3.1\WebMetricPusher_3.1.csproj", "{FC8559F9-D535-47C7-9964-AE754E8FB158}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerMetricServer_5.0", "src\WorkerMetricServer_5.0\WorkerMetricServer_5.0.csproj", "{191C271F-F884-4C4F-8C8B-9A9C0B413104}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerMetricServer_6.0", "src\WorkerMetricServer_6.0\WorkerMetricServer_6.0.csproj", "{191C271F-F884-4C4F-8C8B-9A9C0B413104}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostedServiceMetricPusher_6.0", "src\HostedServiceMetricPusher_6.0\HostedServiceMetricPusher_6.0.csproj", "{9652546D-9A18-411D-8057-B6D1F5F32C5D}"
 EndProject
