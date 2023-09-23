@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.0.0
 MinimumVisualStudioVersion = 10.0.0.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleMetricServer_3.1", "src\ConsoleMetricServer_3.1\ConsoleMetricServer_3.1.csproj", "{728A498E-8D38-45B9-A6DF-DEBEFB6563FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleMetricServer_6.0", "src\ConsoleMetricServer_6.0\ConsoleMetricServer_6.0.csproj", "{728A498E-8D38-45B9-A6DF-DEBEFB6563FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreWebWithoutExtensions_3.1", "src\CoreWebWithoutExtensions_3.1\CoreWebWithoutExtensions_3.1.csproj", "{A03FD2F8-8F18-44AB-9D01-16D15208B087}"
 EndProject
