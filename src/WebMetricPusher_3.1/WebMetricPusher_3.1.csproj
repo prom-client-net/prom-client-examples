@@ -6,7 +6,7 @@
     <PackageReference Include="Prometheus.Client" Version="5.2.0" />
     <PackageReference Include="Prometheus.Client.HttpRequestDurations" Version="3.6.0" />
     <PackageReference Include="Prometheus.Client.MetricPusher" Version="3.1.0" />
-    <PackageReference Include="Prometheus.Client.DependencyInjection" Version="1.3.0" />
+    <PackageReference Include="Prometheus.Client.DependencyInjection" Version="1.4.0" />
   </ItemGroup>
   <ItemGroup>
     <_ContentIncludedByDefault Remove="Properties\launchSettings.json" />
