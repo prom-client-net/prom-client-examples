@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleMetricServer_6.0", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreWebWithoutExtensions_3.1", "src\CoreWebWithoutExtensions_3.1\CoreWebWithoutExtensions_3.1.csproj", "{A03FD2F8-8F18-44AB-9D01-16D15208B087}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthChecks_6.0", "src\HealthChecks_6.0\HealthChecks_6.0.csproj", "{237FECAD-9D7C-43F4-A240-974A5ADE0DE7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthChecks", "src\HealthChecks\HealthChecks.csproj", "{237FECAD-9D7C-43F4-A240-974A5ADE0DE7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore_6.0", "src\AspNetCore_6.0\AspNetCore_6.0.csproj", "{297EA5CD-C468-40CA-A97C-8A5DC28CF701}"
 EndProject
