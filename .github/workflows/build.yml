@@ -12,11 +12,12 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
+      - name: Setup GHPR
+        run: dotnet nuget add source -u ${{ github.repository_owner }} -p ${{ secrets.GH_FULL_PAT }}
+          --store-password-in-clear-text -n github "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
       - name: Build
         run: dotnet build -c Release
