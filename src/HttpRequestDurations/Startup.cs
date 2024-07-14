@@ -9,7 +9,7 @@ using Prometheus.Client.AspNetCore;
 using Prometheus.Client.DependencyInjection;
 using Prometheus.Client.HttpRequestDurations;
 
-namespace WebHttpRequestDurations;
+namespace HttpRequestDurations;
 
 public class Startup
 {
@@ -20,14 +20,12 @@ public class Startup
 
     public IConfiguration Configuration { get; }
 
-    // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddControllers();
         services.AddMetricFactory();
     }
 
-    // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
         app.UseRouting();
@@ -52,7 +50,6 @@ public class Startup
                 { new Regex(@"\/[0-9]{1,}(?![a-z])"), "/id" }
             };
 
-            // Just for example. Not for Production
             q.CustomLabels = new Dictionary<string, Func<string>>
             {
                 {
