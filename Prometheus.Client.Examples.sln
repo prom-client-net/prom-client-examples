@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.0.0
 MinimumVisualStudioVersion = 10.0.0.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleMetricServer_6.0", "src\ConsoleMetricServer_6.0\ConsoleMetricServer_6.0.csproj", "{728A498E-8D38-45B9-A6DF-DEBEFB6563FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleMetricServer", "src\ConsoleMetricServer\ConsoleMetricServer.csproj", "{728A498E-8D38-45B9-A6DF-DEBEFB6563FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreWebWithoutExtensions_3.1", "src\CoreWebWithoutExtensions_3.1\CoreWebWithoutExtensions_3.1.csproj", "{A03FD2F8-8F18-44AB-9D01-16D15208B087}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebWithoutExtensions", "src\WebWithoutExtensions\WebWithoutExtensions.csproj", "{A03FD2F8-8F18-44AB-9D01-16D15208B087}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthChecks", "src\HealthChecks\HealthChecks.csproj", "{237FECAD-9D7C-43F4-A240-974A5ADE0DE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore_6.0", "src\AspNetCore_6.0\AspNetCore_6.0.csproj", "{297EA5CD-C468-40CA-A97C-8A5DC28CF701}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore", "src\AspNetCore\AspNetCore.csproj", "{297EA5CD-C468-40CA-A97C-8A5DC28CF701}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpRequestDurations", "src\HttpRequestDurations\HttpRequestDurations.csproj", "{83246BAD-85BA-4532-84BF-70D18B7FF66A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMetricPusher_3.1", "src\WebMetricPusher_3.1\WebMetricPusher_3.1.csproj", "{FC8559F9-D535-47C7-9964-AE754E8FB158}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMetricPusher", "src\WebMetricPusher\WebMetricPusher.csproj", "{FC8559F9-D535-47C7-9964-AE754E8FB158}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerMetricServer_6.0", "src\WorkerMetricServer_6.0\WorkerMetricServer_6.0.csproj", "{191C271F-F884-4C4F-8C8B-9A9C0B413104}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerMetricServer", "src\WorkerMetricServer\WorkerMetricServer.csproj", "{191C271F-F884-4C4F-8C8B-9A9C0B413104}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostedServiceMetricPusher_6.0", "src\HostedServiceMetricPusher_6.0\HostedServiceMetricPusher_6.0.csproj", "{9652546D-9A18-411D-8057-B6D1F5F32C5D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostedServiceMetricPusher", "src\HostedServiceMetricPusher\HostedServiceMetricPusher.csproj", "{9652546D-9A18-411D-8057-B6D1F5F32C5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

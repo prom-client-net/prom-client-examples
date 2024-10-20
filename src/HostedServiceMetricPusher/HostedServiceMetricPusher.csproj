@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Worker">
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>HostedServiceMetricPusher_6.0</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Prometheus.Client" Version="5.2.0" />

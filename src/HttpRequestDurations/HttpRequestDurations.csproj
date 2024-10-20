@@ -6,6 +6,6 @@
     <PackageReference Include="Prometheus.Client" Version="5.2.0" />
     <PackageReference Include="Prometheus.Client.AspNetCore" Version="5.0.0" />
     <PackageReference Include="Prometheus.Client.DependencyInjection" Version="1.4.0" />
-    <PackageReference Include="Prometheus.Client.HttpRequestDurations" Version="3.6.0.131-g1e3d7fa" />
+    <PackageReference Include="Prometheus.Client.HttpRequestDurations" Version="4.0.0" />
   </ItemGroup>
 </Project>
