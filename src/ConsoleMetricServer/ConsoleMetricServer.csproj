@@ -2,7 +2,6 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>ConsoleMetricServer</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Prometheus.Client.MetricServer" Version="6.0.0" />

@@ -1,4 +1,5 @@
 using System;
+using HostedServiceMetricPusher;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Prometheus.Client.MetricPusher;
