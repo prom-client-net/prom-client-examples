@@ -4,7 +4,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Prometheus.Client.Collectors;
 using Prometheus.Client.DependencyInjection;
-using Prometheus.Client.HttpRequestDurations;
 using Prometheus.Client.MetricPusher;
 
 namespace WebMetricPusher;
@@ -31,12 +30,6 @@ public class Startup
         app.UseRouting();
 
         app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
-
-        app.UsePrometheusRequestDurations(q =>
-        {
-            q.IncludePath = true;
-            q.IncludeMethod = true;
-        });
 
         var registry = app.ApplicationServices.GetService<ICollectorRegistry>();
         var pusher = new MetricPusher(new MetricPusherOptions

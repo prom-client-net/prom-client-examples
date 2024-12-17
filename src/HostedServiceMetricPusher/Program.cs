@@ -1,4 +1,3 @@
-using System;
 using HostedServiceMetricPusher;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -15,7 +14,7 @@ var metricPusher = new MetricPusher(new MetricPusherOptions
 var host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
     {
-        services.AddMetricPusherService(metricPusher, TimeSpan.FromSeconds(1));
+        services.AddMetricPusherHostedService(metricPusher);
         services.AddHostedService<Worker>();
     })
     .Build();
