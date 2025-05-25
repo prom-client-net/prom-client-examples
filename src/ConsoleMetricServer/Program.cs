@@ -12,7 +12,7 @@ class Program
         var registry = new CollectorRegistry();
         var options = new MetricServerOptions
         {
-            CollectorRegistryInstance = registry
+            CollectorRegistry = registry
         };
         var factory = new MetricFactory(registry);
 

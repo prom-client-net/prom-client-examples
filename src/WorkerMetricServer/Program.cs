@@ -19,7 +19,7 @@ public class Program
                 services.AddSingleton<IMetricServer>(sp => new MetricServer(
                     new MetricServerOptions
                     {
-                        CollectorRegistryInstance = sp.GetRequiredService<ICollectorRegistry>(),
+                        CollectorRegistry = sp.GetRequiredService<ICollectorRegistry>(),
                         UseDefaultCollectors = true
                     }));
                 services.AddHostedService<Worker>();
