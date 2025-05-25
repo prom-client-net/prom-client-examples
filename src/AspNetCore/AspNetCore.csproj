@@ -4,8 +4,8 @@
 
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Prometheus.Client" Version="5.2.0" />
-    <PackageReference Include="Prometheus.Client.AspNetCore" Version="5.0.0" />
+    <PackageReference Include="Prometheus.Client" Version="6.0.0" />
+    <PackageReference Include="Prometheus.Client.AspNetCore" Version="6.0.0" />
     <PackageReference Include="Prometheus.Client.DependencyInjection" Version="1.5.1" />
   </ItemGroup>
 </Project>
