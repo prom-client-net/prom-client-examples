@@ -5,9 +5,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
-using Prometheus.Client;
 using Prometheus.Client.AspNetCore;
-using Prometheus.Client.Collectors;
 using Prometheus.Client.DependencyInjection;
 using Prometheus.Client.HealthChecks;
 
