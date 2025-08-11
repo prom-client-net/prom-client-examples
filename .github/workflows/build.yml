@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup GHPR
         run: dotnet nuget add source -u ${{ github.repository_owner }} -p ${{ secrets.GITHUB_TOKEN }}
           --store-password-in-clear-text -n github "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
