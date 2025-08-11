@@ -9,8 +9,8 @@
   "packageRules": [
     {
       "automerge": true,
-      "sourceUrlPrefixes": ["https://github.com/prom-client-net"],
-      "groupName": "prom-client"
+      "groupName": "prom-client",
+      "matchSourceUrls": ["https://github.com/prom-client-net{/,}**"]
     }
   ]
 }
