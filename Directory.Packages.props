@@ -1,0 +1,18 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="Prometheus.Client" Version="6.1.0" />
+    <PackageVersion Include="Prometheus.Client.DependencyInjection" Version="1.5.1" />
+    <PackageVersion Include="Prometheus.Client.AspNetCore" Version="6.0.0" />
+    <PackageVersion Include="Prometheus.Client.HttpRequestDurations" Version="4.0.0" />
+    <PackageVersion Include="Prometheus.Client.HealthChecks" Version="2.1.1" />
+    <PackageVersion Include="Prometheus.Client.MetricServer" Version="7.0.0" />
+    <PackageVersion Include="Prometheus.Client.MetricPusher" Version="3.3.0" />
+    <PackageVersion Include="Prometheus.Client.MetricPusher.HostedService" Version="0.5.0" />
+
+    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+    <PackageVersion Include="AspNetCore.HealthChecks.Uris" Version="8.0.1" />
+  </ItemGroup>
+</Project>
