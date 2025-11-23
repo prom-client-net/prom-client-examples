@@ -6,7 +6,7 @@
     <PackageVersion Include="Prometheus.Client" Version="6.1.0" />
     <PackageVersion Include="Prometheus.Client.DependencyInjection" Version="1.6.0" />
     <PackageVersion Include="Prometheus.Client.AspNetCore" Version="6.0.0" />
-    <PackageVersion Include="Prometheus.Client.HttpRequestDurations" Version="4.0.0" />
+    <PackageVersion Include="Prometheus.Client.HttpRequestDurations" Version="4.1.0" />
     <PackageVersion Include="Prometheus.Client.HealthChecks" Version="2.1.1" />
     <PackageVersion Include="Prometheus.Client.MetricServer" Version="7.0.0" />
     <PackageVersion Include="Prometheus.Client.MetricPusher" Version="3.3.0" />
