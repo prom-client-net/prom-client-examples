@@ -3,7 +3,7 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="Prometheus.Client" Version="6.1.0" />
+    <PackageVersion Include="Prometheus.Client" Version="6.2.0" />
     <PackageVersion Include="Prometheus.Client.DependencyInjection" Version="1.6.0" />
     <PackageVersion Include="Prometheus.Client.AspNetCore" Version="6.0.0" />
     <PackageVersion Include="Prometheus.Client.HttpRequestDurations" Version="4.1.0" />
