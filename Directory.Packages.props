@@ -11,8 +11,12 @@
     <PackageVersion Include="Prometheus.Client.MetricServer" Version="7.0.0" />
     <PackageVersion Include="Prometheus.Client.MetricPusher" Version="3.3.0" />
     <PackageVersion Include="Prometheus.Client.MetricPusher.HostedService" Version="0.6.0" />
+    <PackageVersion Include="Prometheus.Client.Owin" Version="3.1.0.115-g212eb69" />
 
     <PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
     <PackageVersion Include="AspNetCore.HealthChecks.Uris" Version="8.0.1" />
+    <PackageVersion Include="Microsoft.Owin.Hosting" Version="4.2.3" />
+    <PackageVersion Include="Microsoft.Owin.Host.HttpListener" Version="4.2.3" />
+    <PackageVersion Include="Microsoft.AspNet.WebApi.Owin" Version="5.3.0" />
   </ItemGroup>
 </Project>
