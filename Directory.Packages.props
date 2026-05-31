@@ -11,6 +11,7 @@
     <PackageVersion Include="Prometheus.Client.MetricServer" Version="7.0.0" />
     <PackageVersion Include="Prometheus.Client.MetricPusher" Version="3.3.0" />
     <PackageVersion Include="Prometheus.Client.MetricPusher.HostedService" Version="0.6.0" />
+    <PackageVersion Include="Prometheus.Client.HttpClient" Version="0.1.0" />
     <PackageVersion Include="Prometheus.Client.Owin" Version="4.0.0" />
 
     <PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
